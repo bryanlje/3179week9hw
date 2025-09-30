@@ -33,11 +33,16 @@
         "url": "https://raw.githubusercontent.com/bryanlje/3179week9hw/main/output.json",
         "format": { "type": "topojson", "feature": "my" }
       },
-      "mark": { "type": "geoshape", "fill": "#8cd07d", "stroke": "#489c35", "strokeWidth": 1 }
+      "mark": { 
+        "type": "geoshape", 
+        "fill": "#8cd07d", 
+        "stroke": "#489c35", 
+        "strokeWidth": 1 
+    }
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/bryanlje/3179week9hw/main/foreign_arrivals.csv",
+        "url": "https://raw.githubusercontent.com/bryanlje/3179week9hw/main/arrivals_record.csv",
         "format": { "type": "csv", "parse": { "date": "date" } }
       },
       "transform": [
@@ -53,7 +58,7 @@
           "lookup": "poe",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/bryanlje/3179week9hw/main/poe.csv",
+              "url": "https://raw.githubusercontent.com/bryanlje/3179week9hw/main/points_of_entry.csv",
               "format": { "type": "csv", "parse": { "lat": "number", "long": "number" } }
             },
             "key": "poe",
